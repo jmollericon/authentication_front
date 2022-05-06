@@ -1,0 +1,12 @@
+.heading {
+  margin-bottom: 2rem;
+  font-weight: 300;
+  color: #571845;
+  user-select: none;
+  font-size: 4rem;
+}
+@media (max-width: 720px) {
+  .heading {
+    font-size: 2.5rem;
+  }
+}
