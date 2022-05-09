@@ -1,0 +1,27 @@
+.footer {
+  padding: 2rem 0;
+  background: #399cff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  height: 10rem;
+}
+.social-icon {
+  display: flex;
+  margin-bottom: 1rem;
+}
+.social-icon img {
+  height: 3rem;
+  margin-right: 3rem;
+  filter: invert(100%); /* Invert the image color */
+}
+.footer-text {
+  text-align: center;
+  font-size: 1.5rem;
+  color: #fff;
+}

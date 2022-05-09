@@ -3,6 +3,8 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom';
 
 import Navbar from './Navbar/Navbar';
 import HeroSection from './HeroSection/HeroSection';
+import Footer from './Footer/Footer';
+
 import './App.css';
 
 const App = () => {
@@ -13,6 +15,7 @@ const App = () => {
         <Routes>
           <Route path='/' exact element={<HeroSection />} />
         </Routes>
+        <Footer />
       </BrowserRouter>
     </div>
   );
