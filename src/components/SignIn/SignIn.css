@@ -1,4 +1,4 @@
-.signup-container {
+.signin-container {
   background-color: #57ffff;
 }
 .heading {
@@ -13,7 +13,7 @@
     font-size: 2.5rem;
   }
 }
-.signup-input {
+.signin-input {
   display: block;
   width: 100%;
   border: 1px solid #399cff;
@@ -21,11 +21,11 @@
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
 }
-.signup-input:focus {
+.signin-input:focus {
   outline: none;
   border: 1px solid #ccc;
 }
-.signup-button {
+.signin-button {
   border: none;
   padding: 0.5rem 3rem;
   background: #399cff;

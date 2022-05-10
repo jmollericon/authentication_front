@@ -15,7 +15,7 @@ const SignUp = props => {
       <input type="password" name="" id="" className="signup-input" placeholder="Password" />
       <input type="password" name="" id="" className="signup-input" placeholder="Confirm password" />
       <div className="bottom-container">
-        <button type="button" className="signup-button">Signup</button>
+        <button type="button" className="signup-button">SignUp</button>
         <p>I already have an account!</p>
         <Link to="/signin" className="link">Signin</Link>
       </div>
