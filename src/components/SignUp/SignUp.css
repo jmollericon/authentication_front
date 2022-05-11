@@ -48,3 +48,18 @@
   font-size: 1.8rem;
   text-decoration: none;
 }
+.message {
+  margin-bottom: 1rem;
+  font-size: 1.2rem;
+  padding: 0.5rem 1rem;
+}
+.message-error {
+  background-color: #ff5c5c2d;
+  border-left: 3px solid #ff5c5c;
+  color: #330000;
+}
+.message-success {
+  background-color: #00ffaa1e;
+  border-left: 3px solid #00ffaa;
+  color: #05412d;
+}
