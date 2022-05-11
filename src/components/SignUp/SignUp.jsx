@@ -28,6 +28,7 @@ const SignUp = () => {
     setPassword('');
     setConfirmPassword('');
   }
+
   const handleSubmit = async (event) => {
     event.preventDefault();
     const data = {
@@ -47,12 +48,14 @@ const SignUp = () => {
     try {
       const { data: response } = await axios.post('http://localhost:8002/api/signup', data);
       console.log({ response });
+
       setTypeMessage(TYPE_MESSAGE.SUCCESS);
       setMessage('User registered successfully');
       setShowMessage(true);
       resetForm();
     } catch (error) {
       // console.log({error})
+
       setTypeMessage(TYPE_MESSAGE.ERROR);
       if (error.response.data.error) {
         setMessage(error.response.data.error);
@@ -63,7 +66,7 @@ const SignUp = () => {
 
   return (
     <MainContainer>
-      <form onSubmit={handleSubmit} >
+      <form onSubmit={handleSubmit}>
         <h1 className="heading">Create a New Account<br /><strong> It is Free</strong></h1>
         {showMessage && <p className={"message message-" + typeMessage}>{message}</p>}
         <input type="text" name="firstname" value={firstname} onChange={e => setFirstname(e.target.value)} className="signup-input" placeholder="First name" required />
