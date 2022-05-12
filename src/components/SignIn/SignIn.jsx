@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
 import axios from 'axios';
 
 import MainContainer from '../MainContainer/MainContainer';
@@ -11,7 +11,8 @@ const TYPE_MESSAGE = {
   SUCCESS: 'success'
 };
 
-const SignIn = () => {
+const SignIn = ({ setLoggedin }) => {
+  const navigate = useNavigate();
   const [email, setEmail] = useState('');
   const [password, setPassword] = useState('');
   const [message, setMessage] = useState('');
@@ -33,13 +34,17 @@ const SignIn = () => {
     setShowMessage(false);
 
     try {
-      const res = await axios.post('http://localhost:8002/api/signin', data, { withCredentials: false });
-      console.log({ res });
+      const res = await axios.post('http://localhost:8002/api/signin', data);
+      const { user, token } = res.data;
+      localStorage.setItem('user', JSON.stringify(user));
+      localStorage.setItem('token', JSON.stringify(token));
+      setLoggedin(true);
 
       setTypeMessage(TYPE_MESSAGE.SUCCESS);
       setMessage('Successfully login');
       setShowMessage(true);
       resetForm();
+      navigate('/');
     } catch (error) {
       // console.log({error})
 

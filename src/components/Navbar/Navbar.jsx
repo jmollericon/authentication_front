@@ -1,10 +1,30 @@
 import React from 'react'
-import { Link } from 'react-router-dom';
+import { Link, useNavigate } from 'react-router-dom';
+import axios from 'axios';
+
 import CTA from '../CTA/CTA';
 
 import './Navbar.css';
 
-const Navbar = () => {
+const Navbar = ({ setLoggedin, loggedin }) => {
+  const navigate = useNavigate();
+
+  const signout = async () => {
+    try {
+      const res = await axios.get('http://localhost:8002/api/signout');
+      const { success } = res.data;
+
+      if (success) {
+        localStorage.removeItem('user');
+        localStorage.removeItem('token');
+        setLoggedin(false);
+        navigate('/signin');
+      }
+    } catch (error) {
+      console.log({error})
+    }
+  }
+
   return (
     <div className="main-header">
       <div className="logo-container">
@@ -22,9 +42,8 @@ const Navbar = () => {
             <Link to="/about" className="link nav-link">About</Link>
           </li>
           <li className="nav-item">
-            <CTA target='/signin'>
-              Account
-            </CTA>
+           {!loggedin && <CTA target='/signin'>Account</CTA>}
+           {loggedin && <button onClick={signout} className="button-sign-out">Sign Out</button>}
           </li>
         </ul>
       </nav>
