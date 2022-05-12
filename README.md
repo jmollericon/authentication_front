@@ -38,3 +38,17 @@ Installtion of the project
 ## Authors
 
 - [@jmollericon](https://www.github.com/jmollericon)
+
+## Screenshots
+![image](https://user-images.githubusercontent.com/61030255/168107225-01e881d5-ca9d-46c4-9c0d-baa643653cfe.png)
+![image](https://user-images.githubusercontent.com/61030255/168107259-39f90cd6-cfa4-47e2-b769-2c8d6373a108.png)
+![image](https://user-images.githubusercontent.com/61030255/168107287-24290bcb-1cc4-478d-b43a-d61674016c00.png)
+![image](https://user-images.githubusercontent.com/61030255/168107328-5a68ffc8-9480-4657-9064-84fe34015148.png)
+
+#### Validations
+![image](https://user-images.githubusercontent.com/61030255/168107507-a358be05-2492-460b-8c3c-0367c0e85dc4.png)
+![image](https://user-images.githubusercontent.com/61030255/168107647-882a66fe-ae72-4032-b377-e532bf80339e.png)
+![image](https://user-images.githubusercontent.com/61030255/168107691-bab316f0-71cc-4b77-ad3c-18ddbb106203.png)
+
+![image](https://user-images.githubusercontent.com/61030255/168107773-dd0c166c-2c19-448a-83ef-0f353ac79cdf.png)
+![image](https://user-images.githubusercontent.com/61030255/168107803-1275b1db-567c-41ce-9f50-afc357c30aa4.png)
