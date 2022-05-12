@@ -3,7 +3,7 @@
   font-weight: bold;
 }
 .logo, .nav-link {
-  color: #571845;
+  color: #525252;
 }
 .main-header {
   height: 7.5rem;
@@ -26,7 +26,7 @@
   display: inline-block;
   border: none;
   outline: none;
-  background: #571845;
+  background: #525252;
   color: #fff;
   padding: 1rem 3rem;
   border-radius: 2rem;

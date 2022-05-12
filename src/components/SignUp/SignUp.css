@@ -4,7 +4,7 @@
 .heading {
   margin-bottom: 2rem;
   font-weight: 300;
-  color: #571845;
+  color: #525252;
   user-select: none;
   font-size: 4rem;
 }
@@ -16,7 +16,7 @@
 .signup-input {
   display: block;
   width: 100%;
-  border: 1px solid #399cff;
+  border: 1px solid #12a775;
   margin-bottom: 1rem;
   padding: 0.5rem 1rem;
   border-radius: 0.4rem;
@@ -28,7 +28,7 @@
 .signup-button {
   border: none;
   padding: 0.5rem 3rem;
-  background: #399cff;
+  background: #12a775;
   color: #fff;
   font-weight: bold;
   cursor: pointer;
@@ -36,14 +36,14 @@
 .bottom-container p {
   margin-top: 0.5rem;
   font-weight: 300;
-  color: #571845;
+  color: #525252;
   user-select: none;
   font-size: 1.5rem;
 }
 .bottom-container .link {
   margin-top: 0.5rem;
   font-weight: bold;
-  color: #571845;
+  color: #525252;
   user-select: none;
   font-size: 1.8rem;
   text-decoration: none;

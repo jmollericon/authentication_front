@@ -10,7 +10,7 @@ const HeroSection = ({ loggedin, user }) => {
   return (
     <MainContainer>
       <Heading>Plan your day with <strong> - liTask</strong></Heading>
-      {loggedin && <p className="welcome-message">Welcome {user.firstname} {user.lastname}</p>}
+      {loggedin && <b className="welcome-message">Welcome {user.firstname} {user.lastname}</b>}
       {!loggedin && <CTA target='/signup'>Start Now</CTA>}
     </MainContainer>
   )
